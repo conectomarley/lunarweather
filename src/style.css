@@ -61,7 +61,7 @@ main {
   font-weight: 500;
 }
 .weatherlunar-details strong {
-  color: #2d767fS;
+  color: #2d767f;
 }
 
 .weatherlunar-container {
@@ -77,6 +77,11 @@ main {
 .weatherlunar-icon {
   font-size: 44px;
   margin-top: 22px;
+}
+
+.weatherlunar-unit {
+  margin-top: 16px;
+  font-size: 28px;
 }
 
 footer {
