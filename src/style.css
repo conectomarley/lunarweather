@@ -38,7 +38,46 @@ header {
   color: white;
 }
 
+main {
+  padding: 30px 0;
+}
 
+.weatherlunar-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weatherlunar-city {
+  margin: 0;
+  font-size: 38px;
+  line-height: 48px;
+  color: #393e46;
+}
+
+.weatherlunar-details {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(39, 33, 66, 0.4);
+  font-weight: 500;
+}
+.weatherlunar-details strong {
+  color: #2d767fS;
+}
+
+.weatherlunar-container {
+  display: flex;
+}
+
+.weatherlunar-temperature {
+  font-size: 88px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.weatherlunar-icon {
+  font-size: 44px;
+  margin-top: 22px;
+}
 
 footer {
   border-top: 1px solid #ecfffb;

@@ -18,22 +18,29 @@
         <form class="search-form">
           <input
             type="search"
-            placeholder="Enter a city.."
+            placeholder="Enter a city..."
             required
             class="search-form-input"
           />
-          <input type="submit" value="search" class="search-form-button" />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Sydney</h1>
-          <p>
-            Tuesday 9:22 pm, scattered clouds <br />
-            Humidity: 65%, Wind: 3.13km/h
-          </p>
+        <div class="weatherlunar-data">
+          <div>
+            <h1 class="weatherlunar-city">Sydney</h1>
+            <p class="weatherlunar-details">
+              Tuesday 9:22 pm, scattered clouds
+              <br />
+              Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
+            </p>
+          </div>
+          <div class="weatherlunar-container">
+            <div class="weatherlunar-icon">🌤</div>
+            <div class="weatherlunar-temperature">12</div>
+            <div class="weatherlunar-unit">˚C</div>
+          </div>
         </div>
-        <div>🌤 12˚C</div>
       </main>
 
       <footer>
