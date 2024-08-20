@@ -51,7 +51,6 @@ main {
   margin: 0;
   font-size: 38px;
   line-height: 48px;
-  color: #393e46;
 }
 
 .weatherlunar-details {
@@ -75,7 +74,7 @@ main {
 }
 
 .weatherlunar-icon {
-  font-size: 44px;
+  width: 44px;
   margin-top: 22px;
 }
 
