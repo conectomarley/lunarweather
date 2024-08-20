@@ -66,16 +66,19 @@ main {
 
 .weatherlunar-container {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .weatherlunar-temperature {
   font-size: 88px;
+  margin-left: 10px;
   line-height: 88px;
   font-weight: bold;
 }
 
 .weatherlunar-icon {
-  width: 88px;
+  font-size: 88px;
   height: 88px;
 }
 
