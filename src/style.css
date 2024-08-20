@@ -59,6 +59,7 @@ main {
   color: rgba(39, 33, 66, 0.4);
   font-weight: 500;
 }
+
 .weatherlunar-details strong {
   color: #2d767f;
 }
@@ -69,17 +70,17 @@ main {
 
 .weatherlunar-temperature {
   font-size: 88px;
-  margin-left: 10px;
+  line-height: 88px;
   font-weight: bold;
 }
 
 .weatherlunar-icon {
-  width: 44px;
-  margin-top: 22px;
+  width: 88px;
+  height: 88px;
 }
 
 .weatherlunar-unit {
-  margin-top: 16px;
+  margin-top: 6px;
   font-size: 28px;
 }
 
@@ -88,6 +89,5 @@ footer {
   padding: 30px 0 0 0;
   text-align: center;
   font-size: 13px;
-  font-weight: 500;
   color: rgba(0, 0, 0, 0.6);
 }
