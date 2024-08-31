@@ -40,6 +40,13 @@ function formatDate(date) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[date.getDay()];
+}
+
 function searchCity(city) {
   let apiKey = "3t4aaf46b1o5b1534f3e944eb00eb10d";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
@@ -60,26 +67,31 @@ function getForecast(city) {
 }
 
 function displayForecast(response) {
-  console.log(response.data);
-
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
 
-  days.forEach(function (day) {
-    forecastHtml =
-      forecastHtml +
-      `
+  response.data.daily.forEach(function (day, index) {
+    if (index < 5) {
+      forecastHtml =
+        forecastHtml +
+        `
     <div class="lunar-forecast-day">
-            <div class="lunar-forecast-date">${day}</div>
-            <div class="lunar-forecast-icon">☀️</div>
+            <div class="lunar-forecast-date">${formatDay(day.time)}</div>
+            <div class="lunar-forecast-icon">
+            <img src="${
+              day.condition.icon_url
+            }" class="lunar-forecast-icon" /></div>
             <div class="lunar-forecast-temperatures">
               <div class="lunar-forecast-temperature">
-                <strong>15°</strong>
+                <strong>${Math.round(day.temperature.maximum)}°</strong>
               </div>
-              <div class="lunar-forecast-temperature">9°</div>
+              <div class="lunar-forecast-temperature">${Math.round(
+                day.temperature.minimum
+              )}°</div>
             </div>
             </div>
             `;
+    }
   });
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
