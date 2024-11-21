@@ -25,12 +25,12 @@ a {
 }
 
 header {
-  border-bottom: 1px solid #ecfffb;
+  border-bottom: none;
   padding: 0 0 30px 0;
 }
 
 .search-form-input {
-  background-color: #ecfffb;
+  background: #fafafa;
   border: none;
   border-radius: 6px;
   width: 80%;
